@@ -1,6 +1,6 @@
 {
-  "homepage": "http://alex-coder27.github.io/pokedex_api/",
-  "name": "pokedex_api",
+  "homepage": "https://alex-coder27.github.io/pokedex/",
+  "name": "pokedex",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

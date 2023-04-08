@@ -11,7 +11,7 @@ export const PokeDetails = ({ name, image, moves, types, abilities, id }) => {
     return (
         <>
             <Heading>
-                <Link to='/'>
+                <Link to='/pokedex'>
                     <C.HomePage src={theme.seta} alt="seta" />
                 </Link>
                 <ThemeSwitcherButton />
