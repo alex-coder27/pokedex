@@ -1,5 +1,5 @@
 import AppRoutes from './pages/routes';
-import { GlobalStyle } from './context/global-style';
+import { GlobalStyle } from './global-style';
 import { ThemeProvider } from './context/theme-switcher';
 
 
