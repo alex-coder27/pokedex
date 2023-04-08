@@ -26,7 +26,6 @@ export const HomePage = () => {
     function loadMore() {
         setOffSet(offSet + addOffSet)
     }
-
     return (
         <>
             <Heading>
@@ -35,13 +34,13 @@ export const HomePage = () => {
             </Heading>
             <C.Main theme={theme}>
                 <C.ListPokemon>
-                    {pokemons.map((pokemon, index) => {
+                    {pokemons.map((pokemon, i) => {
                         return (
                             <CardPokemon
+                                key={i}
                                 name={pokemon.name}
                                 id={pokemon.id}
                                 image={pokemon.sprites.other.dream_world.front_default}
-                                key={index}
                                 types={pokemon.types}
                             />
                         )

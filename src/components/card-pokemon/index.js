@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { ThemeContext } from "../../context/theme-switcher"
 import * as C from "./style"
 
-export const CardPokemon = ({ name, image, id, types }) => {
+export const CardPokemon = ({ name, image, id, types}) => {
     const { theme } = useContext(ThemeContext)
     return (
         <C.Card theme={theme}>
@@ -17,7 +17,7 @@ export const CardPokemon = ({ name, image, id, types }) => {
             <C.ContainerType>
                 {types.map(type => {
                     return (
-                        <p className={type.type.name}>{type.type.name}</p>
+                        <p key={type.slot} className={type.type.name}>{type.type.name}</p>
                     )
                 })}
             </C.ContainerType>
