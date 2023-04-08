@@ -7,7 +7,7 @@ export const CardPokemon = ({ name, image, id, types}) => {
     const { theme } = useContext(ThemeContext)
     return (
         <C.Card theme={theme}>
-            <Link to={`/pokemon/${name}`}>
+            <Link to={`/pokedex/pokemon/${name}`}>
                 <C.ContainerImage theme={theme}>
                     <img src={image} alt={name} />
                 </C.ContainerImage>
