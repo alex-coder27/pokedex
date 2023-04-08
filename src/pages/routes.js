@@ -6,7 +6,7 @@ import { Details } from './details';
 const AppRoutes = () => (
   <BrowserRouter>
     <Routes>
-      <Route exact path="Pokedex_PokeAPI/" element={<HomePage />} />
+      <Route exact path="pokedex_api/" element={<HomePage />} />
       <Route exact path="pokemon/:name" element={<Details/>}></Route>
     </Routes>
   </BrowserRouter>
